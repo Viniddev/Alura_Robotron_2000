@@ -150,7 +150,34 @@ main {
     color: var(--main-branco)
 }
 
+.alterar {
+    font-weight: bolder;
+    clip-path: polygon(100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 0);
+    border: 3px solid var(--main-branco);
+    background: var(--main-branco);
+    margin-top: 1em;
+    font-size: 15px;
+    width: 150px;
+    text-transform: uppercase;
+    padding: 5px;
+    height: 50px;
+}
 
+.botoes {
+    height: 30px;
+    width: 90vw;
+    display: flex;
+    position: fixed;
+    bottom: 10%;
+    gap: 25px;
+    align-items: flex-start;
+    /*justify-content: center;*/
+}
+
+.alterar:hover {
+    background: var(--main-preto);
+    color: var(--main-branco)
+}
 
 /****************************** Estatísticas *****/
 .estatisticas {
