@@ -1,5 +1,6 @@
 const controle = document.querySelectorAll("[data-controle]") 
 const estatistica = document.querySelectorAll("[data-estatistica]")
+const iniciarProd = document.querySelector("[data-producao]")
 
 const pecas = {
     "bracos": {
@@ -62,3 +63,7 @@ function atualizarDados(peca){
 function trocaImagem(cor){
     document.querySelector(".robo").src="./img/Robotron 2000 - "+cor+"/Robotron 2000 - "+cor+".png";
  }
+
+iniciarProd.addEventListener("click", ()=>{
+    window.alert("**INICIANDO PRODUÇÃO*** VAMOS COMBATER OS ALIENS!")
+})
